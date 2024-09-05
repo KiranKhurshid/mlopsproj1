@@ -16,8 +16,7 @@ X_train,X_test,y_train,y_test = train_test_split(X,y,test_size =0.2)
 y_pred = model.predict(X_test)
 
 #calculate accuracy
-accuracy = accuracy_score(y_test,y_pred )
-
+accuracy = accuracy_score(y_test,y_pred)
 st.title("Model accuracy and real_time prediction")
 #display acuracy
 st.write(f"Model{accuracy}")
